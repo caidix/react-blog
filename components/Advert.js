@@ -24,10 +24,10 @@ const Advert = () => {
           }
           .tuodan{
             box-shadow: 0px 2px 3px 0px #a3d900;
+            font-weight: 800;
             text-align:center;
             color:#ff8936;
             position: relative;
-            margin-bottom: 10px !important;
           }
       `}</style>
     </div>
