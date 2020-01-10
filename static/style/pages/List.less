@@ -1,0 +1,44 @@
+.bread-div {
+  background-color: #d3e0f3;
+}
+
+.tag-list {
+  padding      : .5rem 1rem;
+  margin-bottom: 10px;
+
+  button {
+
+    --hue           : 181;
+    margin          : 0 10px;
+    position        : relative;
+    background-color: transparent;
+    text-decoration : none;
+    font-size       : .8rem;
+    color           : hsl(var(--hue), 100%, 41%);
+    border          : 0;
+    padding         : 6px 12px;
+    text-align      : center;
+    transition      : 0.55s;
+    overflow        : hidden;
+    cursor          : pointer;
+    user-select     : none;
+    border-radius   : 5px;
+    box-shadow      : 3px 3px 0 0 hsl(var(--hue), 100%, 41%) inset, 3px 3px 0 0 hsl(var(--hue), 100%, 41%);
+
+    &:hover {
+      color     : white;
+      --hue     : 318;
+      background: transparent;
+      box-shadow: 5em 5em 0 0 hsl(var(--hue), 100%, 41%) inset,
+        0 0 0 0 hsl(var(--hue), 100%, 41%);
+    }
+  }
+
+  .active {
+    color     : white;
+    --hue     : 318;
+    background: transparent;
+    box-shadow: 5em 5em 0 0 hsl(var(--hue), 100%, 41%) inset,
+      0 0 0 0 hsl(var(--hue), 100%, 41%);
+  }
+}

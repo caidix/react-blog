@@ -1,0 +1,102 @@
+body {
+  background-color: #88ada6;
+}
+
+.main-header {
+  color     : #007fff;
+  font-size : 1.4rem;
+  text-align: center;
+}
+
+.comm-left {
+  background-color: #FFF;
+  border-radius   : .3rem;
+}
+
+.comm-box {
+  background-color: #FFF;
+  margin-left     : .5rem;
+  padding         : .3rem;
+  border-radius   : .3rem;
+  border          : 1px solid #eee;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.comm-main {
+  margin-top: .5rem;
+}
+
+/*
+  列表详情
+*/
+.ant-list-items:hover {
+  background-color: rgba(0, 0, 0, .01);
+  cursor          : pointer;
+}
+
+.ant-list-item {
+  padding      : 1.5rem 2rem;
+  border-bottom: 1px solid #e8e8e8 !important;
+  transition   : 0.25s;
+
+  &:hover {
+    box-shadow: 0 0.7px 1.7px rgba(0, 0, 0, 0.248),
+      0 1.7px 4.3px rgba(0, 0, 0, 0.355),
+      0 3.5px 8.9px rgba(0, 0, 0, 0.445),
+      0 2px 10px rgba(0, 0, 0, 0.552)
+  }
+
+  .meta-list {
+    display    : flex;
+    align-items: baseline;
+    white-space: nowrap;
+  }
+
+  .meta-list .item::after {
+    content: "·";
+    color  : rgb(178, 186, 194);
+    margin : 0px 0.4em;
+  }
+
+  .list-title {
+    font-size  : 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color      : #177cb0;
+  }
+
+  .list-title:hover {
+    text-shadow: 1px 1px #a3d900;
+  }
+
+  .list-context {
+    color  : #777;
+    padding: .5rem;
+  }
+
+  .list-icon {
+    color: #AAA;
+  }
+
+  .list-icon span {
+    display: inline-block;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comm-main {
+    margin-top: 0;
+  }
+
+  .comm-left {
+    border-radius: 0;
+  }
+}
